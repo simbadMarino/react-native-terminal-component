@@ -7,7 +7,7 @@ const { argv: args } = require('yargs');
 const isProd = args.mode === 'production';
 
 let plugins = [
-  new webpack.NamedModulesPlugin()
+  //new webpack.NamedModulesPlugin()
 ];
 
 const libraryName = 'Terminal';

@@ -1,4 +1,4 @@
-import minimatch from 'minimatch';
+import {Minimatch} from 'minimatch';
 import capture from 'minimatch-capture';
 import { List } from 'immutable';
 
