@@ -8,7 +8,8 @@
     "test": "cross-env NODE_PATH=./src mocha --require @babel/register --colors './test/**/*.spec.js' './demo-**/**/*.spec.js'",
     "test:min": "yarn run test --reporter min",
     "test:coverage": "nyc yarn run test",
-    "cli": "node demo-cli"
+    "cli": "node demo-cli",
+    "rn": "node demo-rn"
   },
   "repository": {
     "type": "git",
