@@ -5,7 +5,7 @@
   "scripts": {
     "build-rn": "node ./react-native.wrapper",
     "build": "webpack --mode development && webpack --mode production",
-    "test": "cross-env NODE_PATH=./src mocha --require babel-core/register --colors './test/**/*.spec.js' './demo-**/**/*.spec.js'",
+    "test": "cross-env NODE_PATH=./src mocha --require @babel/register --colors './test/**/*.spec.js' './demo-**/**/*.spec.js'",
     "test:min": "yarn run test --reporter min",
     "test:coverage": "nyc yarn run test",
     "cli": "node demo-cli"
@@ -31,12 +31,13 @@
   },
   "homepage": "https://github.com/Cawfree/react-native-terminal-component",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
+    "@babel/register": "^7.22.15",
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.3",
     "babel-plugin-add-module-exports": "^1.0.4",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^7.0.0-beta.3",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.3.10",
     "chai-immutable": "^2.0.0-alpha.1",
