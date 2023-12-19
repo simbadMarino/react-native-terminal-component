@@ -8,7 +8,7 @@ import {
   Platform,
 } from 'react-native';
 import { WebView } from 'react-native-webview';
-import PropTypes from 'deprecated-react-native-prop-types';
+import PropTypes from 'prop-types';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
